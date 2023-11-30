@@ -58,10 +58,11 @@ def sprite_sheet_generator():
                     height += img.height  # 计算下一排开始的高度
         sprite_sheet.save(OUTPUT_IMAGES_DIR + 'sprite-sheet.png')
         print("已完成, 生成目录：" + OUTPUT_IMAGES_DIR)
-        # 等待输入再退出,让程序在打包后双击运行时看到上面的完成信息
-        input("输入回车退出程序...")
     else:
         print('no images in', INCOMING_IMAGES_DIR, 'directory.')
+
+    # 等待输入再退出,让程序在打包后双击运行时看到上面的完成信息
+    input("输入回车退出程序...")
 
 
 """ 
